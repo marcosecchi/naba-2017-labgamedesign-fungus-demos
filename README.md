@@ -9,9 +9,5 @@ Most of the examples have been created on student request or as a solution for s
 
 *  **Fungus_BasicFlowchart**: a simple example on how to use the dialogue and branching system with a _Flowchart_.
 
-![Unity3D and Fungus](http://www.marcosecchi.it/wp-content/uploads/2017/01/fungus_3d_01-1024x621.png)
-
-![Unity3D and Fungus](http://www.marcosecchi.it/wp-content/uploads/2017/01/fungus_3d_02-1024x686.png)
-
 ## About
 Demos created by Marco Secchi ([marcosecchi.it](http://marcosecchi.it/)).
