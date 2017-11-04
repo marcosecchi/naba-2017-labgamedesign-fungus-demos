@@ -177,7 +177,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 994585599}
   selectedCommands: []
   variables:
   - {fileID: 994585572}
@@ -823,8 +824,8 @@ MonoBehaviour:
   useCustomTint: 1
   itemId: 22
   blockName: Shortcut to Option Z
-  description: "To activate this shortcut block, simply set it to execute on 'Game
-    Started' (and disable the 'Start\xEC' block)."
+  description: To activate this shortcut block, simply set it to execute on 'Game
+    Started' (and disable the 'Start' block).
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 994585596}
