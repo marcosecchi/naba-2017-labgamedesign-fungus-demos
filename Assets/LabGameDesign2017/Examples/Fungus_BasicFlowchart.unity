@@ -166,24 +166,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 169.5386, y: -51.851116}
+  scrollPos: {x: 196.45984, y: -41.181553}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 400
-  zoom: 1
+  zoom: 0.93400383
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 994585599}
+  selectedBlocks: []
   selectedCommands: []
   variables:
   - {fileID: 994585572}
   - {fileID: 994585571}
-  description: 
+  description: Simple flowchard example.
   stepPause: 0
   colorCommands: 1
   hideComponents: 1
@@ -818,7 +817,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 519.4614
     y: 226.85112
-    width: 160
+    width: 162.41925
     height: 40
   tint: {r: 0.09558821, g: 0.550913, b: 1, a: 1}
   useCustomTint: 1
