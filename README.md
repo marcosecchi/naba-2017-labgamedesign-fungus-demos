@@ -7,7 +7,11 @@ Most of the examples have been created on student request or as a solution for s
 
 ## Scene List
 
+### Basic Examples
+
 *  **Fungus_BasicFlowchart**: a simple example on how to use the dialogue and branching system with a _Flowchart_.
+*  **Fungus_CustomDialoguesAndCharacters**: how to use _Characters_ and custom _Dialogs_.
+*  **Fungus_ViewAndParrallax**: how to use views and the _Parallax_ effect.
 
 ## About
 Demos created by Marco Secchi ([marcosecchi.it](http://marcosecchi.it/)).
