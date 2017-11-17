@@ -53,7 +53,8 @@ GameObject:
   - component: {fileID: 33791648463120486}
   - component: {fileID: 65561622510266862}
   - component: {fileID: 23523923301628360}
-  - component: {fileID: 114201808344463074}
+  - component: {fileID: 114979338925127646}
+  - component: {fileID: 114559243069717938}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -69,7 +70,7 @@ Transform:
   m_GameObject: {fileID: 1824133402656598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 4919339081294492}
   m_RootOrder: 1
@@ -189,7 +190,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114201808344463074
+--- !u!114 &114559243069717938
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -197,11 +198,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1824133402656598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8634e062924929664361c08745211fb, type: 3}
+  m_Script: {fileID: 11500000, guid: 9705d8edbf8e94053abc29dc4b40a144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  triggerType: 1
+  action: 5
+  target: {fileID: 1398264070587136}
+  source: {fileID: 0}
+  triggerCount: 1
+  repeatTrigger: 1
+--- !u!114 &114979338925127646
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824133402656598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9705d8edbf8e94053abc29dc4b40a144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerType: 0
   action: 2
   target: {fileID: 1398264070587136}
   source: {fileID: 0}
   triggerCount: 1
-  repeatTrigger: 0
+  repeatTrigger: 1
