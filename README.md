@@ -7,11 +7,13 @@ Most of the examples have been created on student request or as a solution for s
 
 ## Scene List
 
-### Basic Examples
+### Fungus Examples
 
-*  **Fungus_BasicFlowchart**: a simple example on how to use the dialogue and branching system with a _Flowchart_.
-*  **Fungus_CustomDialoguesAndCharacters**: how to use _Characters_ and custom _Dialogs_.
-*  **Fungus_ViewAndParrallax**: how to use views and the _Parallax_ effect.
+*  **3DTriggers**: how to use triggers to activate a _Flowchart_.
+*  **BasicFlowchart**: a simple example on how to use the dialogue and branching system with a _Flowchart_.
+*  **BasicGameObjectControl**: how to activate, clone and destroy a gameobject in a scene using a _Flowchart_.
+*  **CustomDialoguesAndCharacters**: how to use _Characters_ and custom _Dialogs_.
+*  **ViewAndParrallax**: how to use views and the _Parallax_ effect.
 
 ## About
 Demos created by Marco Secchi ([marcosecchi.it](http://marcosecchi.it/)).
