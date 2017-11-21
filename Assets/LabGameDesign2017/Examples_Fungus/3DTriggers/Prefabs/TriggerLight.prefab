@@ -53,8 +53,13 @@ GameObject:
   - component: {fileID: 33791648463120486}
   - component: {fileID: 65561622510266862}
   - component: {fileID: 23523923301628360}
-  - component: {fileID: 114979338925127646}
-  - component: {fileID: 114559243069717938}
+  - component: {fileID: 114431119811678798}
+  - component: {fileID: 114276882981817004}
+  - component: {fileID: 114666341403076732}
+  - component: {fileID: 114229169268393822}
+  - component: {fileID: 114574175263843314}
+  - component: {fileID: 114304265277142580}
+  - component: {fileID: 114975341956854068}
   m_Layer: 0
   m_Name: Trigger
   m_TagString: Untagged
@@ -190,7 +195,7 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
---- !u!114 &114559243069717938
+--- !u!114 &114229169268393822
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -198,16 +203,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1824133402656598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9705d8edbf8e94053abc29dc4b40a144, type: 3}
+  m_Script: {fileID: 11500000, guid: a98f5f89242e80d42865cdf1912beda3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerType: 1
-  action: 5
-  target: {fileID: 1398264070587136}
-  source: {fileID: 0}
-  triggerCount: 1
-  repeatTrigger: 1
---- !u!114 &114979338925127646
+  parentBlock: {fileID: 114574175263843314}
+  tagFilter: []
+  FireOn: 1
+--- !u!114 &114276882981817004
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -215,12 +217,137 @@ MonoBehaviour:
   m_GameObject: {fileID: 1824133402656598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9705d8edbf8e94053abc29dc4b40a144, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  triggerType: 0
-  action: 2
-  target: {fileID: 1398264070587136}
-  source: {fileID: 0}
-  triggerCount: 1
-  repeatTrigger: 1
+  nodeRect:
+    serializedVersion: 2
+    x: 49.925278
+    y: 139.21542
+    width: 120
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 0
+  blockName: Trigger Exit
+  description: 
+  eventHandler: {fileID: 114975341956854068}
+  commandList:
+  - {fileID: 114431119811678798}
+--- !u!114 &114304265277142580
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824133402656598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a334fe2ffb574b3583ff3b18b4792d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  scrollPos: {x: 0.07472181, y: 0.784583}
+  variablesScrollPos: {x: 0, y: 0}
+  variablesExpanded: 1
+  blockViewHeight: 400
+  zoom: 1
+  scrollViewRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 0
+    height: 0
+  selectedBlocks:
+  - {fileID: 114276882981817004}
+  selectedCommands: []
+  variables: []
+  description: A Light is enabled/disabled when a collider enters this element (which
+    has a collider too).
+  stepPause: 0
+  colorCommands: 1
+  hideComponents: 1
+  saveSelection: 1
+  localizationId: 
+  showLineNumbers: 0
+  hideCommands: []
+  luaEnvironment: {fileID: 0}
+  luaBindingName: flowchart
+--- !u!114 &114431119811678798
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824133402656598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 3
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1398264070587136}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &114574175263843314
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824133402656598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 49.925278
+    y: 49.215416
+    width: 121
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 4
+  blockName: Trigger Enter
+  description: 
+  eventHandler: {fileID: 114229169268393822}
+  commandList:
+  - {fileID: 114666341403076732}
+--- !u!114 &114666341403076732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824133402656598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 1
+  indentLevel: 0
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1398264070587136}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &114975341956854068
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1824133402656598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a98f5f89242e80d42865cdf1912beda3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 114276882981817004}
+  tagFilter: []
+  FireOn: 4

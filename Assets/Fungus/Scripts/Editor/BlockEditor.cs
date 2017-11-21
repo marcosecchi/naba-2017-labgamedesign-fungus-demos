@@ -607,7 +607,7 @@ namespace Fungus.EditorUtils
             Block[] blocks = flowchart.GetComponents<Block>();
             for (int i = 0; i < blocks.Length; ++i)
             {
-                blockNames.Add(new GUIContent(blocks[i].name));
+				blockNames.Add(new GUIContent(blocks[i].BlockName));
 
                 if (block == blocks[i])
                 {
@@ -725,8 +725,8 @@ namespace Fungus.EditorUtils
                     EventHandlerInfoAttribute info = EventHandlerEditor.GetEventHandlerInfo(type);
 
                     if (info != null &&
-                        info.Category == category ||
-                        info.Category == "" && category == "Core")
+                        (info.Category == category ||
+                         (info.Category == "" && category == "Core")))
                     {
                         markdown += "# " + info.EventHandlerName + " # {#" + info.EventHandlerName.Replace(" ", "") + "}\n";
                         markdown += info.HelpText + "\n\n";

@@ -356,13 +356,12 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 899808825}
-  selectedCommands:
-  - {fileID: 899808824}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 899808823}
-  description: 
+  description: This example shows how to enable/disable a game object, how to spawn
+    it and how to destroy it.
   stepPause: 0
   colorCommands: 1
   hideComponents: 1
@@ -374,7 +373,7 @@ MonoBehaviour:
   luaBindingName: flowchart
 --- !u!114 &899808823
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899808821}
@@ -405,12 +404,18 @@ MonoBehaviour:
   _parentTransform:
     transformRef: {fileID: 0}
     transformVal: {fileID: 772370610}
+  _spawnAtSelf:
+    booleanRef: {fileID: 0}
+    booleanVal: 0
   _spawnPosition:
     vector3Ref: {fileID: 899808823}
     vector3Val: {x: 3, y: 0, z: 3}
   _spawnRotation:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+  _newlySpawnedObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 0}
   sourceObjectOLD: {fileID: 0}
   parentTransformOLD: {fileID: 0}
   spawnPositionOLD: {x: 0, y: 0, z: 0}
@@ -454,7 +459,7 @@ MonoBehaviour:
   - {fileID: 899808826}
 --- !u!114 &899808826
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899808821}
@@ -468,10 +473,13 @@ MonoBehaviour:
   _targetGameObject:
     gameObjectRef: {fileID: 0}
     gameObjectVal: {fileID: 1479272221}
+  destroyInXSeconds:
+    floatRef: {fileID: 0}
+    floatVal: 0
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &899808827
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899808821}
@@ -486,7 +494,7 @@ MonoBehaviour:
   commentText: Destroys the cube with the Destroy command.
 --- !u!114 &899808828
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899808821}
@@ -503,7 +511,7 @@ MonoBehaviour:
   durationOLD: 0
 --- !u!114 &899808829
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899808821}
